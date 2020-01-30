@@ -28,6 +28,12 @@ table {
     width: 100%;
     margin: 0 auto;
 }
+#infoform {
+    padding: 3px;
+}
+#burgertable {
+    padding: 3px;
+}
 section {
     margin: 3px;
 }
