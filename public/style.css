@@ -1,6 +1,7 @@
 body {
     font-family: arial;
-    font-size: 1.2em
+    font-size: 1.2em;
+    margin: 0 auto;
 }
 .contains {
     font-weight: bold;
@@ -16,4 +17,8 @@ body {
 button:hover {
     cursor: pointer;
     background-color: blue;
+}
+table {
+    width: 100%;
+    margin: 0 auto;
 }
