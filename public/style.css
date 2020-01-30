@@ -10,3 +10,10 @@ body {
     background-color: black;
     color: white;
 }
+#info {
+   
+}
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+}
