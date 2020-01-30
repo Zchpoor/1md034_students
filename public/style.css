@@ -10,9 +10,15 @@ body {
 #burgers {
     background-color: black;
     color: white;
+    border-style: dashed;
+    border-color: white;
 }
-#info {
-   
+#contact {
+    border-style: dashed;
+    border-color: black;
+}
+button {
+    margin: 3px;
 }
 button:hover {
     cursor: pointer;
@@ -21,4 +27,7 @@ button:hover {
 table {
     width: 100%;
     margin: 0 auto;
+}
+section {
+    margin: 3px;
 }
