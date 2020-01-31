@@ -38,12 +38,18 @@ section {
     margin: 3px;
 }
 #pic {
-    height: 400px;
     width: 100%;
+    height: auto;
     opacity: 0.6;
 }
 #top {
+    height: 400px;
     width: 100%;
+    overflow: hidden;
     margin: 0 auto;
     padding: 3px;
+}
+#rubrik {
+    padding: 3px;
+    position: absolute;
 }
