@@ -37,3 +37,13 @@ table {
 section {
     margin: 3px;
 }
+#pic {
+    height: 400px;
+    width: 100%;
+    opacity: 0.6;
+}
+#top {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3px;
+}
