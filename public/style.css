@@ -51,5 +51,26 @@ section {
 }
 #rubrik {
     padding: 3px;
+    margin-left: 30%;
+    margin-top: 100px;
     position: absolute;
+}
+
+#burgergrid {
+    display: grid;
+    grid-gap: 10px;
+    /*grid-template-columns: 400px 400px 400px;*/
+}
+
+#brgr1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+#brgr2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+#brgr3 {
+    grid-row: 1;
+    grid-column: 3;
 }

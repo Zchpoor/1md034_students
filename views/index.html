@@ -5,56 +5,55 @@
     <title>This is a burger shop</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/js_script.js"></script>
+    <script src="js/vue_script.js"></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
 </head>
 
 <body>
     <main>
         <section id="top">
-        <h1 id="rubrik">Welcome to this generic burger shop!</h1>
-        <img id="pic" src="http://i.huffpost.com/gen/1860694/images/o-GRILLING-facebook.jpg" alt="grill">
+            <h1 id="rubrik">Welcome to this generic burger shop!</h1>
+            <img id="pic" src="http://i.huffpost.com/gen/1860694/images/o-GRILLING-facebook.jpg" alt="grill">
         </section>
     </main>
-    <section  id="burgers">
+    <section id="burgers">
         <h2>Choose your burger:</h2 id="burger1">
-        <table id=burgertable>
-            <tbody>
-                <tr>
-                    <td>
-                        <p><b>1. Ordinary hamburger</b></p>
-                        <img src="http://dev.quantumcloud.com/express-shop-pro/wp-content/uploads/2018/07/BigAls-4oz-Beef-Burger-1.jpg"
-                            alt="Span" title="Hamburger 1" heigt="200">
-                        <ul>
+        <div id="burgergrid">
+            <div id="brgr1">
+                <p><b>1. Ordinary hamburger</b></p>
+                <img src="http://dev.quantumcloud.com/express-shop-pro/wp-content/uploads/2018/07/BigAls-4oz-Beef-Burger-1.jpg"
+                    alt="Span" title="Standard hamburger" heigt="200">
+                <ul>
 
-                            <li>Ordinary burger</li>
-                            <li>Contains: <span class="contains">Gluten</span></li>
-                            <li>Not suitable for vegetarians.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p><b>2. Extraordinary hamburger</b></p>
-                        <img src="https://goodwillduluth.files.wordpress.com/2011/11/cheeseburger1.jpg" alt="Span"
-                            title="Cheeseburger" height="250">
-                        <ul>
+                    <li>Ordinary burger</li>
+                    <li>Contains: <span class="contains">Gluten</span></li>
+                    <li>Not suitable for vegetarians.</li>
+                </ul>
+            </div>
+            <div id="brgr2">
+                <p><b>2. Extraordinary hamburger</b></p>
+                <img src="https://goodwillduluth.files.wordpress.com/2011/11/cheeseburger1.jpg" alt="Span"
+                    title="Cheeseburger" height="250">
+                <ul>
 
-                            <li>Basically cheeseburger</li>
-                            <li>Contains: <span class="contains">Gluten, milk</span></li>
-                            <li>Not suitable for vegetarians.</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <p><b>3. Hefty hamburger</b></p>
-                        <img src="https://serecurioso.files.wordpress.com/2013/07/8681252099_4ff4f7f492_o.jpg"
-                            alt="Span" title="Big burger" height="300">
-                        <ul>
+                    <li>Basically cheeseburger</li>
+                    <li>Contains: <span class="contains">Gluten, milk</span></li>
+                    <li>Not suitable for vegetarians.</li>
+                </ul>
+            </div>
+            <div id="brgr3">
+                <p><b>3. Hefty hamburger</b></p>
+                <img src="https://serecurioso.files.wordpress.com/2013/07/8681252099_4ff4f7f492_o.jpg" alt="Span"
+                    title="Big burger" height="300">
+                <ul>
 
-                            <li>Huge hamburger</li>
-                            <li>Contains: <span class="contains">Gluten, milk</span></li>
-                            <li>Not suitable for vegetarians.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    <li>Huge hamburger</li>
+                    <li>Contains: <span class="contains">Gluten, milk</span></li>
+                    <li>Not suitable for vegetarians.</li>
+                </ul>
+            </div>
+        </div>
     </section>
     <section>
         <h2>Delivery information: </h2>

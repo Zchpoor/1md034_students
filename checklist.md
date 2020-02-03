@@ -47,13 +47,13 @@ Add the following style/behaviour to your website (mostly in style.css but also 
 - [X] Add a border to the two sections
 - [X] Add an image after your headline and make it slightly transparent
 - [X] Place the image behind your headline to finalize your header
-- [ ] Use a grid layout instead of tables for the burger selection section
+- [X] Use a grid layout instead of tables for the burger selection section
 
 
 ## 04 JavaScript and Vue
 
-- [ ] Create js_script.js and vue_script.js
-- [ ] Link to js_script.js, vue_script.js as well as vue.js in index.html
+- [X] Create js_script.js and vue_script.js
+- [X] Link to js_script.js, vue_script.js as well as vue.js in index.html
 - [ ] Add a menuItem constructor with relevant properties to js_script.js
 - [ ] Also use your menuItem constructor to instantiate a total of five burgers in js_script.js
 - [ ] Add the Vue instance example code to vue_script.js 
