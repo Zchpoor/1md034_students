@@ -1,4 +1,4 @@
-const vm = new Vue({
+/*const vm = new Vue({
   el: '#p1',
   data: {
     text: burger1.headline()
@@ -28,3 +28,39 @@ const vm5 = new Vue({
     text: burger5.headline()
   }
 })
+*/
+
+
+
+
+
+
+
+/*
+function burgerMaker(name, kCal){
+  this.name = name;
+  this.kCal = kCal;
+}
+
+let a = new burgerMaker("burgare 1", 300);
+let b = new burgerMaker("burgare 2", 210);
+
+let ol = document.getElementById("list");
+let li = document.createElement("li");
+let liText = document.createTextNode((a.name));
+li.appendChild(liText);
+ol.appendChild(li);
+
+new Vue({
+  el: '#app',
+  data: {
+    burgers: [a, b]
+  },
+  methods: {
+    name: function() {
+      return this.burgers;
+    }
+  }
+})
+
+*/

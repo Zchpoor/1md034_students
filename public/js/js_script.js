@@ -33,28 +33,20 @@ let burger4 = new menuItem("4. Bacon-burger", "https://bluestatebbq.files.wordpr
 let burger5 = new menuItem('5. Bacon-burger (gluten-free)', 'https://www.rotellasbakery.com/wp-content/uploads/2015/07/Beef-Bacon-Burger-on-Gluten-Free.jpeg',
     'Same as 4, but in gluten-free bread.', false, true);
 
-let p1 = document.createElement('p')
-let txt1 = document.createTextNode("{{text}}");
-p1.id = 'p1';
+menu = [burger1, burger2, burger3, burger4, burger5];
+
+
+
+let list = document.getElementById("burgerList");
+let i = 0;
+for (let burger of menu){
+
+let p1 = document.createElement('div')
+let txt1 = document.createTextNode(burger.name);
+let contains = document.createTextNode("Contain: " + burger.contains())
 p1.appendChild(txt1);
-document.body.appendChild(p1);
-let p2 = document.createElement('p');
-let txt2 = document.createTextNode("{{text}}");
-p2.id = 'p2';
-p2.appendChild(txt2);
-document.body.appendChild(p2);
-let p3 = document.createElement('p')
-let txt3 = document.createTextNode("{{text}}");
-p3.id = 'p3';
-p3.appendChild(txt3);
-document.body.appendChild(p3);
-let p4 = document.createElement('p')
-let txt4 = document.createTextNode("{{text}}");
-p4.id = 'p4';
-p4.appendChild(txt4);
-document.body.appendChild(p4);
-let p5 = document.createElement('p')
-let txt5 = document.createTextNode("{{text}}");
-p5.id = 'p5';
-p5.appendChild(txt5);
-document.body.appendChild(p5);
+p1.appendChild(contains);
+list.appendChild(p1);
+i++;
+
+}
