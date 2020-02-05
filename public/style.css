@@ -12,13 +12,14 @@ body {
     color: white;
     border-style: dashed;
     border-color: white;
+    padding: 10px;
 }
 #contact {
     border-style: dashed;
     border-color: black;
 }
 button {
-    margin: 3px;
+    margin: 5px;
 }
 button:hover {
     cursor: pointer;
@@ -62,17 +63,14 @@ section {
     /*grid-template-columns: 400px 400px 400px;*/
 }
 
-.burgerField{
-    margin: 5px;
-
-}
-
 #burgerList{
     display: grid;
     grid-gap: 10px;
     columns: 3;
     grid-template-columns: 33% 33% 33%;
   }
+
+
 /*
 #brgr1 {
     grid-row: 1;

@@ -1,3 +1,5 @@
+
+/*
 function menuItem(name, picture, info, gluten, milk) {
     this.picture = picture; // The this keyword refers to the object itself
     this.info = info;
@@ -37,7 +39,7 @@ let burger5 = new menuItem('5. Bacon-burger (gluten-free)', 'https://www.rotella
 
 menu = [burger1, burger2, burger3, burger4, burger5];
 
-
+*/
 /*
 let list = document.getElementById("burgerList");
 let i = 0;

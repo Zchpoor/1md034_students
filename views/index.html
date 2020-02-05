@@ -7,6 +7,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://vuejs.org/js/vue.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
 </head>
@@ -21,16 +22,16 @@
         </section>
     </main>
     <section id="burgers">
-        <h2>Choose your burger:</h2 id="burger1">
+        <h2 id="chooseYourBurger">Choose your burger:</h2 id="burger1">
 
             <div id="burgerList">
                 <div class="burgerField" v-for="burger in menu"> 
                     <p>{{burger.name}}</p>
-                    <img :src=burger.picture alt="Span"
+                    <img :src=burger.img alt="Span"
                             title="Picture of hamburger" height="300">
                     <ul>
-                        <li>{{burger.desc()}}</li>
-                        <li>{{burger.contains()}}</li>
+                        <li>{{burger.desc}}</li>
+                        <li>{{burger.contains}}</li>
                     </ul>
                 </div>
 <!--
