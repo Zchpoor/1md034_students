@@ -24,17 +24,18 @@
     <section id="burgers">
         <h2 id="chooseYourBurger">Choose your burger:</h2 id="burger1">
 
-            <div id="burgerList">
-                <div class="burgerField" v-for="burger in menu"> 
-                    <p>{{burger.name}}</p>
-                    <img :src=burger.img alt="Span"
-                            title="Picture of hamburger" height="300">
-                    <ul>
-                        <li>{{burger.desc}}</li>
-                        <li>{{burger.contains}}</li>
-                    </ul>
-                </div>
-<!--
+        <div id="burgerList">
+            <div class="burgerField" v-for="burger in menu">
+                <p>{{burger.name}}</p>
+                <img :src=burger.img alt="Span" title="Picture of hamburger" height="300">
+                <br>
+                <input type="checkbox" name="burgerBox" :value=burger.index> One of those!<br>
+                <ul>
+                    <li>{{burger.desc}}</li>
+                    <li>{{burger.contains}}</li>
+                </ul>
+            </div>
+            <!--
         <div id="burgergrid">
             <div id="brgr1">
                 <p><b>1. Ordinary hamburger</b></p>
@@ -88,7 +89,7 @@
                 </p>
                 <p>
                     <label for="Street name">Street:</label><br>
-                    <input type="text" id="Street name" name="Street name" required="required"
+                    <input type="text" id="streetName" name="Street name" required="required"
                         placeholder="Street name" />
                 </p>
                 <p>
@@ -108,11 +109,12 @@
                 <input type="radio" name="gender" value="female"> Female<br>
                 <input type="radio" name="gender" value="secret"> Do not wish to tell<br>
             </form>
-            <button type="submit"><img
+            <button id="submitButton" type="submit" v-on:click="markDone()"><img
                     src="https://www.cabinetjoint.com/wp-content/uploads/2015/09/icon-send-300x191.png" height="15" />
                 Send personal data to suspicious-looking site</button>
         </section>
     </section>
+    <p id="recOrder"></p>
 
     </div>
     <footer>

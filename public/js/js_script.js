@@ -56,3 +56,18 @@ i++;
 
 }
 */
+
+/*
+let myButton = document.getElementById("submitButton");
+//myButton.addEventListener("click", clickFunc);
+myButton.onclick = function () {
+    console.log("Klick!" + pPayment);
+    let pName = document.getElementById("name").value;
+    let pMail = document.getElementById("E-mail").value;
+    let pStreetName = document.getElementById("streetName").value;
+    let pStreetNumber = document.getElementById("number").value;
+    let pPayment = document.getElementById("payment").value;
+    let dataArray = [pName, pMail, pStreetName, pStreetNumber, pPayment];
+
+}
+*/
