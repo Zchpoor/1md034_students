@@ -62,12 +62,18 @@ section {
     /*grid-template-columns: 400px 400px 400px;*/
 }
 
+.burgerField{
+    margin: 5px;
+
+}
+
 #burgerList{
     display: grid;
     grid-gap: 10px;
     columns: 3;
+    grid-template-columns: 33% 33% 33%;
   }
-
+/*
 #brgr1 {
     grid-row: 1;
     grid-column: 1;
@@ -80,3 +86,4 @@ section {
     grid-row: 1;
     grid-column: 3;
 }
+*/

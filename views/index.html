@@ -13,10 +13,7 @@
 
 
 <body>
-    
-    <div id="myID">
-        {{ arbitraryVariableName }}
-    </div>
+
     <main>
         <section id="top">
             <h1 id="rubrik">Welcome to this generic burger shop!</h1>
@@ -25,6 +22,18 @@
     </main>
     <section id="burgers">
         <h2>Choose your burger:</h2 id="burger1">
+
+            <div id="burgerList">
+                <div class="burgerField" v-for="burger in menu"> 
+                    <p>{{burger.name}}</p>
+                    <img :src=burger.picture alt="Span"
+                            title="Picture of hamburger" height="300">
+                    <ul>
+                        <li>{{burger.desc()}}</li>
+                        <li>{{burger.contains()}}</li>
+                    </ul>
+                </div>
+<!--
         <div id="burgergrid">
             <div id="brgr1">
                 <p><b>1. Ordinary hamburger</b></p>
@@ -59,7 +68,9 @@
                     <li>Not suitable for vegetarians.</li>
                 </ul>
             </div>
-        </div>
+        </div>    
+-->
+
     </section>
     <section>
         <h2>Delivery information: </h2>
@@ -101,7 +112,8 @@
                 Send personal data to suspicious-looking site</button>
         </section>
     </section>
-    <div id="burgerList"></div>
+
+    </div>
     <footer>
         <hr>
         <p>©Gereric burgers 2020</p>

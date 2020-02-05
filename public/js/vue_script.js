@@ -31,6 +31,18 @@ const vm5 = new Vue({
 */
 
 
+new Vue({
+  el: '#burgerList',
+  data: {
+    menu: [burger1, burger2, burger3, burger4, burger5]
+  },
+  methods: {
+    name: function() {
+      //return this.menu.name;
+    }
+  }
+})
+
 
 
 
