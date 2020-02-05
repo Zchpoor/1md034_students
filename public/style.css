@@ -65,8 +65,7 @@ section {
 #burgerList{
     display: grid;
     grid-gap: 10px;
-    column-count: auto;
-    column-width: 400px;
+    columns: 3;
   }
 
 #brgr1 {

@@ -42,8 +42,9 @@ let i = 0;
 for (let burger of menu){
 
 let p1 = document.createElement('div')
+p1.style.gridColumn = (i % 2) + 1;
 let txt1 = document.createTextNode(burger.name);
-let contains = document.createTextNode("Contain: " + burger.contains())
+let contains = document.createTextNode("Contains: " + burger.contains())
 p1.appendChild(txt1);
 p1.appendChild(contains);
 list.appendChild(p1);
