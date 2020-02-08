@@ -34,50 +34,12 @@
                 <p>{{burger.name}}</p>
                 <img :src=burger.img alt="Span" title="Picture of hamburger" height="300">
                 <br>
-                <input type="checkbox" name="burgerBox" :value=burger.index> One of those!<br>
+                <input type="checkbox" name="burgerBox" :value=burger.name> One of those!<br>
                 <ul>
                     <li>{{burger.desc}}</li>
                     <li>{{burger.contains}}</li>
                 </ul>
             </div>
-            <!--
-        <div id="burgergrid">
-            <div id="brgr1">
-                <p><b>1. Ordinary hamburger</b></p>
-                <img src="http://dev.quantumcloud.com/express-shop-pro/wp-content/uploads/2018/07/BigAls-4oz-Beef-Burger-1.jpg"
-                    alt="Span" title="Standard hamburger" heigt="200">
-                <ul>
-
-                    <li>Ordinary burger</li>
-                    <li>Contains: <span class="contains">Gluten</span></li>
-                    <li>Not suitable for vegetarians.</li>
-                </ul>
-            </div>
-            <div id="brgr2">
-                <p><b>2. Extraordinary hamburger</b></p>
-                <img src="https://goodwillduluth.files.wordpress.com/2011/11/cheeseburger1.jpg" alt="Span"
-                    title="Cheeseburger" height="250">
-                <ul>
-
-                    <li>Basically cheeseburger</li>
-                    <li>Contains: <span class="contains">Gluten, milk</span></li>
-                    <li>Not suitable for vegetarians.</li>
-                </ul>
-            </div>
-            <div id="brgr3">
-                <p><b>3. Hefty hamburger</b></p>
-                <img src="https://serecurioso.files.wordpress.com/2013/07/8681252099_4ff4f7f492_o.jpg" alt="Span"
-                    title="Big burger" height="300">
-                <ul>
-
-                    <li>Huge hamburger</li>
-                    <li>Contains: <span class="contains">Gluten, milk</span></li>
-                    <li>Not suitable for vegetarians.</li>
-                </ul>
-            </div>
-        </div>    
--->
-
     </section>
     <section>
         <h2>Delivery information: </h2>
@@ -97,11 +59,10 @@
                 <h1> Click in the map! </h1>
                 <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
                 <div class="view-box">
-                  <div id="dots" v-on:click="addOrder">
+                  <div id="dots" v-on:click="displayOrder">
                       <div 
-                        v-for="(order, key) in orders"
-                        v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
-                        {{key}}
+                        v-bind:style="{ left: position.x + 'px', top: position.y + 'px'}">
+                        T
                       </div>
                   </div>
                 </div>
@@ -118,7 +79,7 @@
                 <input type="radio" name="gender" value="female"> Female<br>
                 <input type="radio" name="gender" value="secret"> Do not wish to tell<br>
             </form>
-            <button id="submitButton" type="submit" v-on:click="markDone()"><img
+            <button id="submitButton" type="submit" v-on:click="markDone"><img
                     src="https://www.cabinetjoint.com/wp-content/uploads/2015/09/icon-send-300x191.png" height="15" />
                 Send personal data to suspicious-looking site</button>
         </section>

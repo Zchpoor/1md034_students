@@ -36,7 +36,7 @@ let food = [
         "index" : 4
     },
     {
-        "name": "Hefty hamburger",
+        "name": "Gluten-free",
         "milk": true,
         "gluten": false,
         "desc": "Bacon-burger, in gluten-free bread.",
