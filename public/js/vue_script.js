@@ -10,48 +10,11 @@ new Vue({
   }
 })
 
-const vm = new Vue({
-  el: '#submitButton',
-  methods: {
-      markDone: function() {
-        let pName = document.getElementById("name").value;
-        let pMail = document.getElementById("E-mail").value;
-        //let pStreetName = document.getElementById("streetName").value;
-        //let pStreetNumber = document.getElementById("number").value;
-        let pPayment = document.getElementById("payment").value;
-        
-        
-        let burgerIndex = "Burgers of choice: "; //Used indexes instead of names, becuase of how long the names were.
-
-        let allCheckBoxes = document.getElementsByName("burgerBox");
-        for (let box of allCheckBoxes){
-          if (box.checked){
-            burgerIndex += box.value + " ";
-          }
-        }
-
-        let pGender;
-        let allRadioButtons = document.getElementsByName("gender");
-        for (let radio of allRadioButtons){
-          if (radio.checked){
-            pGender = radio.value;
-            break;
-          }
-        }
-
-        let dataArray = [pName, pMail, pPayment, burgerIndex, pGender];
-        console.log("Klick!" + pGender);
-
-        let order = document.getElementById("recOrder");
-        order.textContent = "Recieved order: " + dataArray.toString();
-      }
-  }
-});
 'use strict';
 const socket = io();
 
-/* eslint-disable-next-line no-unused-vars */
 const vm = new Vue({
+  el: '#submitButton',
   el: '#dots',
   data: {
     orders: {},
@@ -101,5 +64,37 @@ const vm = new Vue({
         orderItems: ['Beans', 'Curry'],
       });
     },
-  },
+      markDone: function() {
+        let pName = document.getElementById("name").value;
+        let pMail = document.getElementById("E-mail").value;
+        //let pStreetName = document.getElementById("streetName").value;
+        //let pStreetNumber = document.getElementById("number").value;
+        let pPayment = document.getElementById("payment").value;
+        
+        
+        let burgerIndex = "Burgers of choice: "; //Used indexes instead of names, becuase of how long the names were.
+
+        let allCheckBoxes = document.getElementsByName("burgerBox");
+        for (let box of allCheckBoxes){
+          if (box.checked){
+            burgerIndex += box.value + " ";
+          }
+        }
+
+        let pGender;
+        let allRadioButtons = document.getElementsByName("gender");
+        for (let radio of allRadioButtons){
+          if (radio.checked){
+            pGender = radio.value;
+            break;
+          }
+        }
+
+        let dataArray = [pName, pMail, pPayment, burgerIndex, pGender];
+        console.log("Klick!" + pGender);
+
+        let order = document.getElementById("recOrder");
+        order.textContent = "Recieved order: " + dataArray.toString();
+      }
+  }
 });
