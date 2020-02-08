@@ -10,6 +10,10 @@
     <script type="text/javascript" src="js/menu.js"></script>
     <script src="js/js_script.js" defer></script>
     <script src="js/vue_script.js" defer></script>
+    <link rel="stylesheet" href="css/deli-very.css">
+    <script src="/vue/vue.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="js/deli-very.js" defer></script>
 </head>
 
 
@@ -87,15 +91,17 @@
                     <label for="E-mail">E-mail:</label><br>
                     <input type="text" id="E-mail" name="mail" required="required" placeholder="E-mail adress" />
                 </p>
-                <p>
-                    <label for="Street name">Street:</label><br>
-                    <input type="text" id="streetName" name="Street name" required="required"
-                        placeholder="Street name" />
-                </p>
-                <p>
-                    <label for="House number">Number:</label><br>
-                    <input type="number" id="number" name="number" required="required" placeholder="House number" />
-                </p>
+                <h1> Click in the map! </h1>
+                <a href="/dispatcher" target="_blank">Open dispatcher in new window</a>.
+                <div class="view-box">
+                  <div id="dots" v-on:click="addOrder">
+                      <div 
+                        v-for="(order, key) in orders"
+                        v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
+                        {{key}}
+                      </div>
+                  </div>
+                </div>
                 <p>
                     <label for="Payment type">Payment method</label><br />
                     <select id="payment" name="payment">
