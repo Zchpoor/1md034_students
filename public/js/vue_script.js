@@ -38,7 +38,7 @@ const vm2 = new Vue({
 
       let dataArray = [pName, pMail, pPayment, pGender];
 
-      vm.addOrder(burgerArray);
+      vm.addOrder(burgerArray, dataArray);
       let order = document.getElementById("recOrder");
       order.textContent = "Recieved order: " + dataArray.toString();
     },
@@ -67,7 +67,7 @@ const vm = new Vue({
       this.index += 1;
       return this.index;
     },
-    addOrder: function (order) {
+    addOrder: function (order, dataArray) {
       /* When you click in the map, a click event object is sent as parameter
        * to the function designated in v-on:click (i.e. this one).
        * The click event object contains among other things different
@@ -78,8 +78,9 @@ const vm = new Vue({
         details: {
           x: this.position.x,
           y: this.position.y,
+          data: dataArray.toString(),
         },
-        order,
+        orderItems: order,
       });
     },
     displayOrder: function (event) {
